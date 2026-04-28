@@ -1,6 +1,6 @@
 "use client"
 import { INav } from "@/types/nav-t"
-import { AcademicCapIcon, Bars4Icon } from "@heroicons/react/24/outline"
+import { Bars4Icon, PrinterIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -15,8 +15,8 @@ export function Nav(props: IProps) {
       <div className="max-w-screen-xl flex flex-wrap items-center gap-x-4 justify between mx-auto p-4">
         <Link href={HOST} className="flex items-center space-x-3">
           <div className="flex gap-x-2">
-            <AcademicCapIcon className="h-8 w-8 stroke-orange-700" />
-            <div className="text-2xl text-orange-700 font-bold">AAS</div>
+            <PrinterIcon className="h-8 w-8 stroke-orange-700" />
+            <div className="text-2xl text-orange-700 font-bold">CopyX</div>
           </div>
         </Link>
         <button
@@ -30,7 +30,7 @@ export function Nav(props: IProps) {
         <div
           className={`w-full md:block md:w-auto${isVisible ? "" : " hidden"}`}
         >
-          <ul className="font-medium flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <ul className="flex flex-row gap-x-8 font-medium">
             {menu.map((item) => (
               <li key={item.slug}>
                 <Link
