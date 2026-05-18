@@ -4,9 +4,8 @@ import { INav } from "@/types/nav-t"
 
 const menu: INav[] = [
   { title: "Employees", slug: "employees" },
-  { title: "Orders", slug: "orders" },
   { title: "Companies", slug: "companies" },
-  { title: "Reports", slug: "reports" },
+  { title: "Accounting", slug: "accounting" },
 ]
 export async function Header() {
   return (
